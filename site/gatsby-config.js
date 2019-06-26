@@ -6,12 +6,12 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   __experimentalThemes: [
-    {
-      resolve: 'gatsby-theme-showcase',
-      options: {
-        basePath: '/entries',
-      },
-    },
+    // {
+    //   resolve: 'gatsby-theme-showcase',
+    //   options: {
+    //     basePath: '/entries',
+    //   },
+    // },
     {
       resolve: 'gatsby-theme-marketing-sanity',
       options: {
