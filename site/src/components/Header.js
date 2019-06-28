@@ -31,7 +31,7 @@ const CustomHeader = () => {
           sx={{
             color: 'gray.3',
             marginRight: '1',
-            display: ['none', 'inherit'],
+            display: ['none', 'inline'],
           }}
         >
           Gatsby
