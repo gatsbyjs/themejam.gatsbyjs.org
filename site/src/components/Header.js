@@ -53,15 +53,18 @@ const CustomHeader = () => {
           <li
             sx={{
               fontWeight: 400,
-              marginRight: '2',
-              display: ['none', 'inherit'],
+              marginRight: '4',
+              display: ['none', 'list-item'],
             }}
           >
             <Link to="#rules">Contest Rules</Link>
           </li>
           <li>
             <Link to="/submit">
-              <Button radius={1}>Submit your Theme</Button>
+              <Button radius={1}>
+                Submit <span sx={{ display: ['none', 'inline'] }}>your</span>{' '}
+                Theme
+              </Button>
             </Link>
           </li>
         </Styled.ul>
