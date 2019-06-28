@@ -5,6 +5,7 @@ require('dotenv').config({
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
+  plugins: ['gatsby-plugin-react-helmet'],
   __experimentalThemes: [
     // {
     //   resolve: 'gatsby-theme-showcase',

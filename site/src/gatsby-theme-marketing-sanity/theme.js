@@ -64,13 +64,9 @@ export const theme = {
       padding: 0,
     },
     li: {
-      display: 'grid',
-      gridTemplateColumns: 'auto auto',
-      gridGap: '2',
-      alignItems: 'center',
-      color: 'muted',
+      color: 'primary',
       '&:focus-within,&:hover': {
-        color: 'primary',
+        cursor: 'primary',
       },
     },
     code: {

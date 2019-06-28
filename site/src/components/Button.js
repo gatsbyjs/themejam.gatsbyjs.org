@@ -16,6 +16,9 @@ const Button = ({ children, radius = 0, ...props }) => {
         paddingLeft: '3',
         paddingRight: '3',
         whiteSpace: 'nowrap',
+        '&:hover': {
+          cursor: 'pointer',
+        },
       }}
       {...props}
     >

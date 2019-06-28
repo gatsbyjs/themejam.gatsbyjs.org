@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
 import { MdArrowDownward } from 'react-icons/md';
@@ -7,7 +8,7 @@ import Illustration from '../assets/themejam.png';
 import OrangePurple from '../assets/pattern/orange+purple.png';
 import TealPurple from '../assets/pattern/teal+purple.png';
 
-const Hero = () => {
+const Hero = ({ headline, subHeadline, subDescription }) => {
   return (
     <>
       <img
@@ -55,20 +56,19 @@ const Hero = () => {
           }}
         />
         <div sx={{ display: 'flex', flexDirection: 'column' }}>
-          <Styled.h1 sx={{ letterSpacing: '-0.15px' }}>
-            Announcing Gatsby Theme Jam!
-          </Styled.h1>
+          <Styled.h1 sx={{ letterSpacing: '-0.15px' }}>{headline}</Styled.h1>
           <Styled.p sx={{ fontSize: '3', color: 'text.1' }}>
-            Build a Gatsby theme and win exclusive swag and prizes
+            {subHeadline}
           </Styled.p>
         </div>
-        <Styled.p sx={{ fontSize: '3', color: 'text.0' }}>
-          To celebrate the launch of Gatsby themes, we’re holding a theme
-          building contest! Remix our blog theme and enter the Theme Jam contest
-          to get exclusive swag designed by Maggie Appleton. The top two entries
-          will win an all-expenses-paid trip to Gatsby Days!
-        </Styled.p>
-        <MdArrowDownward sx={{ color: 'muted' }} size={24} />
+        {subDescription && (
+          <Styled.p sx={{ fontSize: '3', color: 'text.0' }}>
+            {subDescription}
+          </Styled.p>
+        )}
+        <Link to="#get-started">
+          <MdArrowDownward sx={{ color: 'muted' }} size={24} />
+        </Link>
       </section>
     </>
   );

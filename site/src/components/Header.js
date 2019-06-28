@@ -17,32 +17,30 @@ const CustomHeader = () => {
         color: 'primary',
       }}
     >
-      <div
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-        }}
-      >
-        <div sx={{ height: 25, marginRight: '2' }}>
-          <Monogram height={25} />
-        </div>
-        <span
+      <Link sx={{ alignSelf: 'center' }} to="/">
+        <div
           sx={{
-            color: 'gray.3',
-            marginRight: '1',
-            display: ['none', 'inline'],
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
           }}
         >
-          Gatsby
-        </span>
-        <span>Theme Jam</span>
-      </div>
-      <nav
-        sx={{
-          display: 'grid',
-        }}
-      >
+          <div sx={{ height: 25, marginRight: '2' }}>
+            <Monogram height={25} />
+          </div>
+          <span
+            sx={{
+              color: 'gray.3',
+              marginRight: '1',
+              display: ['none', 'inline'],
+            }}
+          >
+            Gatsby
+          </span>
+          <span>Theme Jam</span>
+        </div>
+      </Link>
+      <nav>
         <Styled.ul
           sx={{
             display: 'flex',
@@ -57,7 +55,7 @@ const CustomHeader = () => {
               display: ['none', 'list-item'],
             }}
           >
-            <Link to="#rules">Contest Rules</Link>
+            <Link to="/contest-rules">Contest Rules</Link>
           </li>
           <li>
             <Link to="/submit">
