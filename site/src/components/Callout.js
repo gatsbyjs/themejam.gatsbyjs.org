@@ -10,7 +10,10 @@ const Callout = () => {
         position: `relative`,
         backgroundColor: `#FCFAFF`,
         minHeight: `100px`,
-        marginTop: `2rem`,
+        // these will need to change
+        marginTop: `8rem`,
+        marginBottom: `8rem`,
+        // --------------------
         padding: `4rem`,
         '&::before': {
           position: `absolute`,
