@@ -2,9 +2,9 @@ export const theme = {
   space: [0, 4, 8, 16, 32],
   breakpoints: ['750px'],
   fonts: {
-    heading: `Futura`,
+    heading: `Futura PT`,
     body:
-      'Futura, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif',
+      'Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif',
   },
   fontSizes: [16, 18, 20, 22, 27, 36],
   lineHeights: {
@@ -12,15 +12,18 @@ export const theme = {
     heading: 1.1,
   },
   colors: {
+    text: ['#232129', '#635E69'],
     gray: ['#efefef', '#ddd', '#333', '#111'],
     background: '#fff',
-    primary: 'rebeccapurple',
+    primary: '#663399',
+    muted: '#D9BAE8',
   },
   radii: [4, 32],
   sizes: {
     default: '90vw',
     max: '100%',
   },
+  zIndices: [-1, 1],
   styles: {
     Layout: {
       color: 'gray.2',
@@ -62,11 +65,13 @@ export const theme = {
       padding: 0,
     },
     li: {
-      borderBottom: '1px solid',
-      borderColor: 'gray.1',
-      padding: 2,
+      display: 'grid',
+      gridTemplateColumns: 'auto auto',
+      gridGap: '2',
+      alignItems: 'center',
+      color: 'muted',
       '&:focus-within,&:hover': {
-        backgroundColor: 'gray.0',
+        color: 'primary',
       },
     },
     code: {
@@ -78,6 +83,9 @@ export const theme = {
       fontSize: 0,
       lineHeight: 'heading',
       padding: 1,
+    },
+    p: {
+      margin: 0,
     },
   },
 };
