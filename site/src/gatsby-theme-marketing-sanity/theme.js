@@ -19,6 +19,7 @@ export const theme = {
   radii: [4, 32],
   sizes: {
     default: '90vw',
+    max: '100%',
   },
   styles: {
     Layout: {
@@ -42,7 +43,7 @@ export const theme = {
     },
     Main: {
       margin: '0 auto',
-      maxWidth: '650px',
+      maxWidth: '100%',
       width: 'default',
     },
     Container: {
