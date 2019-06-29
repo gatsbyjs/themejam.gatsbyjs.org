@@ -21,7 +21,6 @@ export const theme = {
   radii: [4, 32],
   sizes: {
     default: '90vw',
-    max: '100%',
   },
   zIndices: [-1, 1],
   styles: {
@@ -46,7 +45,7 @@ export const theme = {
     },
     Main: {
       margin: '0 auto',
-      maxWidth: '100%',
+      maxWidth: '650px',
       width: 'default',
     },
     Container: {
@@ -65,13 +64,9 @@ export const theme = {
       padding: 0,
     },
     li: {
-      display: 'grid',
-      gridTemplateColumns: 'auto auto',
-      gridGap: '2',
-      alignItems: 'center',
-      color: 'muted',
+      color: 'primary',
       '&:focus-within,&:hover': {
-        color: 'primary',
+        cursor: 'primary',
       },
     },
     code: {
