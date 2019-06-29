@@ -12,6 +12,7 @@ const Hero = ({ headline, subHeadline, subDescription }) => {
   return (
     <>
       <img
+        alt="Orange and purple patterned design"
         src={OrangePurple}
         sx={{
           position: 'absolute',
@@ -23,6 +24,7 @@ const Hero = ({ headline, subHeadline, subDescription }) => {
         }}
       />
       <img
+        alt="Teal and purple patterned design"
         src={TealPurple}
         sx={{
           position: 'absolute',
@@ -50,6 +52,7 @@ const Hero = ({ headline, subHeadline, subDescription }) => {
         }}
       >
         <img
+          alt="Trumpets playing music around the Gatsby logo"
           src={Illustration}
           sx={{
             height: 280,

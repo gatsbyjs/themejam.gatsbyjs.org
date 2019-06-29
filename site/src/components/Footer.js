@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
@@ -24,6 +23,7 @@ const Footer = () => {
   return (
     <footer>
       <img
+        alt="Magenta and blue patterned design"
         src={MagentaBlue}
         sx={{
           position: 'absolute',
