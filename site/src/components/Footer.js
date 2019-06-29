@@ -11,7 +11,7 @@ const StyledLink = ({ children, ...props }) => (
     {...props}
     sx={{
       display: 'grid',
-      gridTemplateColumns: 'auto auto',
+      gridTemplateColumns: ['20px auto', 'auto auto'],
       gridGap: '2',
       alignItems: 'center',
     }}
@@ -42,9 +42,11 @@ const Footer = () => {
       <Styled.ul
         sx={{
           display: 'flex',
+          flexDirection: ['column', 'row'],
           marginTop: '4',
           '* + *': {
-            marginLeft: '3',
+            marginLeft: [0, '3'],
+            marginTop: ['2', 0],
           },
         }}
       >

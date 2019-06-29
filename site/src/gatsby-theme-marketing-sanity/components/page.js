@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Hero from '../../components/Hero';
+import Callout from '../../components/Callout';
 import Footer from '../../components/Footer';
+
 const Page = ({ id, slug, title, description, image, content }) => {
   return (
     <>
@@ -17,6 +19,7 @@ const Page = ({ id, slug, title, description, image, content }) => {
         to get exclusive swag designed by Maggie Appleton. The top two entries
         will win an all-expenses-paid trip to Gatsby Days!"
       />
+      <Callout />
       <Footer />
     </>
   );
