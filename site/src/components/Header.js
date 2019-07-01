@@ -55,7 +55,7 @@ const CustomHeader = () => {
               display: ['none', 'list-item'],
             }}
           >
-            <Link to="/contest-rules">Contest Rules</Link>
+            <Link to="/rules">Contest Rules</Link>
           </li>
           <li>
             <Link to="/submit">
