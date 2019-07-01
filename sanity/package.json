@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^0.140.36",
+    "@sanity/code-input": "^0.141.5",
     "@sanity/components": "^0.140.38",
     "@sanity/core": "^0.140.38",
     "@sanity/default-layout": "^0.140.38",
@@ -22,7 +23,8 @@
     "@sanity/desk-tool": "^0.140.38",
     "prop-types": "^15.6",
     "react": "^16.2",
-    "react-dom": "^16.2"
+    "react-dom": "^16.2",
+    "sanity-plugin-markdown": "^1.0.1"
   },
   "devDependencies": {}
 }
