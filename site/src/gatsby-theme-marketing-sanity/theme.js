@@ -16,6 +16,8 @@ export const theme = merge(baseTheme, {
     // primary: '#663399',
     muted: '#D9BAE8',
     text: ['#232129', '#635E69'],
+    code: '#efefef',
+    codeBackground: '#232129',
   },
   radii: [4, 32],
   sizes: {
@@ -31,6 +33,12 @@ export const theme = merge(baseTheme, {
         color: 'inherit',
         textDecoration: 'none',
       },
+    },
+    code: {
+      width: '100%',
+      overflowX: 'auto',
+      color: 'code',
+      backgroundColor: 'codeBackground',
     },
     ul: {
       margin: 0,

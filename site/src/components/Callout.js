@@ -1,8 +1,9 @@
 import React from 'react';
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
+import PortableText from 'gatsby-theme-marketing-sanity/src/components/portable-text';
 
-const Callout = () => {
+const Callout = ({ node }) => {
   return (
     <div
       sx={{
@@ -37,7 +38,7 @@ const Callout = () => {
         },
       }}
     >
-      {`Get started`.toUpperCase()}
+      {/* {`Get started`.toUpperCase()}
       <p>
         Lorem ipsum sunt, sicilia est insula. Here's a quick start for those of
         you who are familiar with Gatsby - I'm not sure about this copy at all.
@@ -47,7 +48,8 @@ const Callout = () => {
         <li>Contest Rules</li>
         <li>Themes Docs</li>
         <li>Official Blog Theme on GitHub</li>
-      </ul>
+      </ul> */}
+      <PortableText blocks={node.calloutContent} />
     </div>
   );
 };
