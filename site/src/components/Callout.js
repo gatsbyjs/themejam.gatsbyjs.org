@@ -1,7 +1,6 @@
 import React from 'react';
-import { jsx } from 'theme-ui';
-import { relative } from 'upath';
 /** @jsx jsx */
+import { jsx } from 'theme-ui';
 
 const Callout = () => {
   return (
@@ -15,6 +14,7 @@ const Callout = () => {
         marginBottom: `8rem`,
         // --------------------
         padding: `4rem`,
+        textAlign: `left`,
         '&::before': {
           position: `absolute`,
           zIndex: `-1`,

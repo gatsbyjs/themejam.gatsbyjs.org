@@ -21,7 +21,7 @@ const StyledLink = ({ children, ...props }) => (
 
 const Footer = () => {
   return (
-    <footer>
+    <footer sx={{ textAlign: 'left' }}>
       <img
         alt="Magenta and blue patterned design"
         src={MagentaBlue}

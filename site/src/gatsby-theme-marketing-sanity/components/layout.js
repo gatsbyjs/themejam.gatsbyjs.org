@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Layout as ThemeLayout, Main, Container } from 'theme-ui';
+/** @jsx jsx */
+import { jsx, Layout as ThemeLayout, Main, Container } from 'theme-ui';
 import Header from '../../components/Header';
 import useSiteMetadata from 'gatsby-theme-marketing-sanity/src/hooks/use-site-metadata';
 
@@ -23,7 +24,7 @@ const Layout = ({ title, description, children }) => {
       </Helmet>
       <Header />
       <Main>
-        <Container>{children}</Container>
+        <Container sx={{ textAlign: 'center' }}>{children}</Container>
       </Main>
     </ThemeLayout>
   );
