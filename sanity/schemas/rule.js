@@ -1,0 +1,36 @@
+export default {
+  title: 'Rule',
+  name: 'rule',
+  type: 'object',
+  fields: [
+    {
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+    },
+    {
+      title: 'Description',
+      name: 'description',
+      type: 'text',
+      rows: 3,
+      description: 'The text displayed under the rules name.',
+    },
+    {
+      title: 'Rule Icon',
+      name: 'icon',
+      type: 'image',
+      fields: [
+        {
+          type: 'string',
+          name: 'alt',
+          title: 'Alt text',
+          description:
+            'Add a description of the image content for the visually impaired.',
+          options: {
+            isHighlighted: true,
+          },
+        },
+      ],
+    },
+  ],
+};
