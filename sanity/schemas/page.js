@@ -31,6 +31,7 @@ export default {
           ],
         },
         { type: 'page-image' },
+        { type: 'callout' },
       ],
     },
     {
