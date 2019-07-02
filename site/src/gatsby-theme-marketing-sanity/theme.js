@@ -3,7 +3,7 @@ import { merge } from 'lodash';
 
 // shadowing the base theme defined in the marketing theme to override design tokens
 export const theme = merge(baseTheme, {
-  space: [0, 4, 8, 16, 32],
+  space: [0, 4, 8, 16, 32, 64, 128],
   breakpoints: ['750px'],
   fonts: {
     heading: `Futura PT`,

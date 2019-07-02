@@ -9,18 +9,17 @@ const Callout = ({ node }) => {
         position: `relative`,
         backgroundColor: `#FCFAFF`,
         minHeight: `100px`,
-        // these will need to change
-        marginTop: `8rem`,
-        marginBottom: `8rem`,
-        // --------------------
-        padding: `4rem`,
+        marginTop: 6,
+        marginBottom: 6,
+        padding: 5,
         textAlign: `left`,
         '&::before': {
           position: `absolute`,
           zIndex: `-1`,
           width: `100px`,
           height: `100px`,
-          transform: `translate(-5.75rem,-5.75rem)`,
+          right: 0,
+          transform: `translate(1.75rem,-5.75rem)`,
           content: '""',
           backgroundImage: `linear-gradient(45deg, #B17ACC 16.67%, #ffffff 16.67%, #ffffff 50%, #B17ACC 50%, #B17ACC 66.67%, #ffffff 66.67%, #ffffff 100%)`,
           backgroundSize: `4.24px 4.24px`,
@@ -48,7 +47,7 @@ const Callout = ({ node }) => {
         <li>Themes Docs</li>
         <li>Official Blog Theme on GitHub</li>
       </ul> */}
-      <PortableText blocks={node.calloutContent} />
+      <PortableText blocks={node.content} />
     </div>
   );
 };

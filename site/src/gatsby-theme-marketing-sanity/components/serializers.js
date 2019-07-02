@@ -12,7 +12,7 @@ export default {
   types: {
     // if you want to change headings, etc., you have to edit this component
     callout: Callout,
-    codeBlock: CodeBlock,
+    code: CodeBlock,
     block: BlockRenderer,
     'page-image': Figure,
     rule: Rule,
