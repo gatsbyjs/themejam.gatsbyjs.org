@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
 /** @jsx jsx */
+import { Link } from 'gatsby';
 import { Header, jsx, Styled } from 'theme-ui';
 
 import Monogram from './logo/monogram';

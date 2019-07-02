@@ -1,6 +1,5 @@
-import React from 'react';
-import Helmet from 'react-helmet';
 /** @jsx jsx */
+import Helmet from 'react-helmet';
 import { jsx, Layout as ThemeLayout, Main, Container } from 'theme-ui';
 import Header from '../../components/Header';
 import useSiteMetadata from 'gatsby-theme-marketing-sanity/src/hooks/use-site-metadata';

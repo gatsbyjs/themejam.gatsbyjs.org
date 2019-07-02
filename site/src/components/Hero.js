@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
 /** @jsx jsx */
+import { Link } from 'gatsby';
 import { jsx, Styled } from 'theme-ui';
 import { MdArrowDownward } from 'react-icons/md';
 
