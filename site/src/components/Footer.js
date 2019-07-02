@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import MagentaBlue from '../assets/pattern/magenta+blue.png';
 
@@ -19,6 +20,30 @@ const StyledLink = ({ children, ...props }) => (
 );
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          footer {
+            blurb
+            links {
+              link
+              name
+              icon
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { blurb, links } = data.site.siteMetadata.footer;
+
+  const icons = {
+    twitter: FaTwitter,
+    github: FaGithub,
+  };
+
   return (
     <footer sx={{ textAlign: 'left' }}>
       <img
@@ -32,12 +57,7 @@ const Footer = () => {
           zIndex: '0',
         }}
       />
-      <Styled.p sx={{ color: 'text.1' }}>
-        Gatsby is a modern website framework that builds performance into every
-        website by leveraging the latest web technologies. Create blazing fast,
-        compelling apps and websites without needing to become a performance
-        expert.
-      </Styled.p>
+      <Styled.p sx={{ color: 'text.1' }}>{blurb}</Styled.p>
       <Styled.ul
         sx={{
           display: 'flex',
@@ -49,7 +69,18 @@ const Footer = () => {
           },
         }}
       >
-        <Styled.li>
+        {links.map(link => {
+          const Icon = link.icon ? icons[link.icon] : null;
+
+          return (
+            <Styled.li key={link.url}>
+              <StyledLink href={link.url}>
+                {Icon && <Icon />} {link.name}
+              </StyledLink>
+            </Styled.li>
+          );
+        })}
+        {/* <Styled.li>
           <StyledLink href="https://www.gatsbyjs.org">gatsbyjs.org</StyledLink>
         </Styled.li>
         <Styled.li>
@@ -62,7 +93,7 @@ const Footer = () => {
             <FaTwitter />
             gatsbyjs
           </StyledLink>
-        </Styled.li>
+        </Styled.li> */}
       </Styled.ul>
     </footer>
   );
