@@ -3,13 +3,12 @@ import { jsx } from 'theme-ui';
 import { navigate } from 'gatsby'
 import theme from '../gatsby-theme-marketing-sanity/theme'
 
-const Button = ({ children, href, radius = 0, toLink, ...props }) => {
-  console.log(theme)
+const Button = ({ children, href, radius = 0, toLink, node, ...props }) => {
   return (
     <button
       onClick={() => {
         // navigate to rel or external link if provided
-        href && window.location.assign(href)
+        node && window.location.assign(node.linkUrl)
         toLink && navigate(toLink)
       }}
       sx={{
@@ -18,6 +17,7 @@ const Button = ({ children, href, radius = 0, toLink, ...props }) => {
         backgroundColor: 'primary',
         borderRadius: radius,
         color: 'background',
+        marginBottom: '5',
         paddingTop: '2',
         paddingBottom: '2',
         paddingLeft: '3',
@@ -33,7 +33,7 @@ const Button = ({ children, href, radius = 0, toLink, ...props }) => {
       }}
       {...props}
     >
-      {children}
+      {(node && node.text) || children}
     </button>
   );
 };

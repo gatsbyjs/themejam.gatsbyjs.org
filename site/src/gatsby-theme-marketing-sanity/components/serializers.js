@@ -1,7 +1,7 @@
 import { Styled } from 'theme-ui';
 import BlockRenderer from 'gatsby-theme-marketing-sanity/src/components/block-renderer';
 import Figure from 'gatsby-theme-marketing-sanity/src/components/figure';
-import ButtonBlock from '../../components/ButtonBlock';
+import Button from '../../components/Button';
 import Callout from '../../components/Callout';
 import CodeBlock from '../../components/CodeBlock';
 import Rule from '../../components/Rule';
@@ -13,7 +13,7 @@ export default {
   types: {
     // if you want to change headings, etc., you have to edit this component
     block: BlockRenderer,
-    button: ButtonBlock,
+    button: Button,
     callout: Callout,
     code: CodeBlock,
     'page-image': Figure,
