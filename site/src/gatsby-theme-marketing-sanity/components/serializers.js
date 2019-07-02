@@ -20,7 +20,6 @@ export default {
     'page-image': ({ node }) => (
       <div
         sx={{
-          display: 'grid',
           alignItems: 'center',
           margin: '0 auto',
           width: 360,
