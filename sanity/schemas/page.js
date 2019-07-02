@@ -33,6 +33,7 @@ export default {
         { type: 'page-image' },
         { type: 'callout' },
         { type: 'rule' },
+        { type: 'button' },
       ],
     },
     {

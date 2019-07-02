@@ -4,13 +4,14 @@ import createSchema from 'part:@sanity/base/schema-creator';
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
-import seo from './seo';
-import page from './page';
-import pageImage from './page-image';
+import button from './button';
 import callout from './callout';
 import calloutContent from './calloutContent';
+import page from './page';
+import pageImage from './page-image';
 import rule from './rule';
 import ruleIcon from './rule-icon';
+import seo from './seo';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,12 +20,13 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    pageImage,
-    seo,
-    page,
-    rule,
-    ruleIcon,
+    button,
     callout,
     calloutContent,
+    page,
+    pageImage,
+    rule,
+    ruleIcon,
+    seo,
   ]),
 });

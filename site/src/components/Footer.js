@@ -57,7 +57,7 @@ const Footer = () => {
           zIndex: '0',
         }}
       />
-      <Styled.p sx={{ color: 'text.1' }}>{blurb}</Styled.p>
+      <Styled.p sx={{ marginBottom: '2', color: 'text.1' }}>{blurb}</Styled.p>
       <Styled.ul
         sx={{
           display: 'flex',
@@ -80,20 +80,6 @@ const Footer = () => {
             </Styled.li>
           );
         })}
-        {/* <Styled.li>
-          <StyledLink href="https://www.gatsbyjs.org">gatsbyjs.org</StyledLink>
-        </Styled.li>
-        <Styled.li>
-          <StyledLink href="https://www.github.com/gatsbyjs/gatsby">
-            <FaGithub /> github.com/gatsbyjs
-          </StyledLink>
-        </Styled.li>
-        <Styled.li>
-          <StyledLink href="https://twitter.com/gatsbyjs">
-            <FaTwitter />
-            gatsbyjs
-          </StyledLink>
-        </Styled.li> */}
       </Styled.ul>
     </footer>
   );
