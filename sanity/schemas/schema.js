@@ -9,6 +9,7 @@ import page from './page';
 import pageImage from './page-image';
 import callout from './callout';
 import calloutContent from './calloutContent';
+import rule from './rule';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,5 +17,5 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([pageImage, seo, page, callout, calloutContent]),
+  types: schemaTypes.concat([pageImage, seo, page, rule, callout, calloutContent]),
 });
