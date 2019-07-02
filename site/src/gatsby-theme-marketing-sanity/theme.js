@@ -66,7 +66,7 @@ export const theme = merge(baseTheme, {
     },
     p: {
       margin: 0,
-      marginBottom: '2',
+      marginBottom: '5',
     },
   },
 });
