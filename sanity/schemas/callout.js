@@ -4,17 +4,8 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Callout Section',
-      name: 'calloutContent',
-      type: 'array',
-      of: [
-        { type: 'block' },
-        {
-          title: 'Code Block',
-          name: 'codeBlock',
-          type: 'code',
-        },
-      ],
+      name: 'content',
+      type: 'calloutContent',
     },
   ],
 };

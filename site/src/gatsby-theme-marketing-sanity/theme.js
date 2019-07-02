@@ -34,11 +34,20 @@ export const theme = merge(baseTheme, {
         textDecoration: 'none',
       },
     },
+    Main: {
+      maxWidth: '650px',
+    },
     code: {
       width: '100%',
       overflowX: 'auto',
       color: 'code',
       backgroundColor: 'codeBackground',
+    },
+    h2: {
+      margin: 0,
+    },
+    h3: {
+      margin: 0,
     },
     ul: {
       margin: 0,
@@ -57,6 +66,7 @@ export const theme = merge(baseTheme, {
     },
     p: {
       margin: 0,
+      marginBottom: '2',
     },
   },
 });

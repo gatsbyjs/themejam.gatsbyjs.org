@@ -1,4 +1,3 @@
-import React from 'react';
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import PortableText from 'gatsby-theme-marketing-sanity/src/components/portable-text';
