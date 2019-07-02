@@ -1,4 +1,3 @@
-import React from 'react';
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
