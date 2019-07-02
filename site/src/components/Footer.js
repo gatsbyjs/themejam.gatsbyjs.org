@@ -13,6 +13,7 @@ const StyledLink = ({ children, ...props }) => (
       gridTemplateColumns: ['20px auto', 'auto auto'],
       gridGap: '2',
       alignItems: 'center',
+      whiteSpace: 'nowrap',
     }}
   >
     {children}
@@ -27,9 +28,9 @@ const Footer = () => {
           footer {
             blurb
             links {
-              link
               name
               icon
+              url
             }
           }
         }
@@ -51,7 +52,7 @@ const Footer = () => {
         src={MagentaBlue}
         sx={{
           position: 'absolute',
-          right: 0,
+          right: [-35, 0],
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',

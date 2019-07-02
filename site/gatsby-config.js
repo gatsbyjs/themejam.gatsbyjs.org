@@ -19,22 +19,22 @@ module.exports = {
         {
           icon: null,
           name: 'gatsbyjs.org',
-          link: 'https://gatsbyjs.org',
+          url: 'https://gatsbyjs.org',
         },
         {
           icon: 'github',
           name: 'github.com/gatsbyjs',
-          link: 'https://github.com/gatsbyjs',
+          url: 'https://github.com/gatsbyjs',
         },
         {
           icon: 'twitter',
           name: 'twitter.com/gatsbyjs',
-          link: 'https://twitter.com/gatsbyjs',
+          url: 'https://twitter.com/gatsbyjs',
         },
         {
           icon: null,
           name: 'Terms of Use',
-          link: 'https://gatsbyjs.com/terms-of-use',
+          url: 'https://gatsbyjs.com/terms-of-use',
         },
       ],
     },
