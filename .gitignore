@@ -71,3 +71,6 @@ yarn-error.log
 # Special stuff so I can use Yarn workspaces but not commit that to Git
 /packages
 /package.json
+
+.netlify/
+dist/
