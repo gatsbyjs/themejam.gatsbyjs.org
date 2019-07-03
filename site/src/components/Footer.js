@@ -9,7 +9,7 @@ const StyledLink = ({ children, ...props }) => (
   <a
     {...props}
     sx={{
-      color: 'inherit',
+      color: 'primary',
       display: 'grid',
       gridTemplateColumns: ['20px auto', 'auto auto'],
       gridGap: '2',
@@ -57,6 +57,7 @@ const Footer = () => {
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
+          opacity: [0.3, 1],
         }}
       />
       <Styled.p sx={{ marginBottom: '2', color: 'text.1' }}>{blurb}</Styled.p>
