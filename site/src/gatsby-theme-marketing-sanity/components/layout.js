@@ -2,7 +2,6 @@
 import Helmet from 'react-helmet';
 import { jsx, Layout as ThemeLayout, Main, Container } from 'theme-ui';
 import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import useSiteMetadata from 'gatsby-theme-marketing-sanity/src/hooks/use-site-metadata';
 
 // Import Futura PT typeface
