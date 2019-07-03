@@ -34,6 +34,7 @@ export default {
         { type: 'callout' },
         { type: 'rule' },
         { type: 'button' },
+        { type: 'lede' },
       ],
     },
     {

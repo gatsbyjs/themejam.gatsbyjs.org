@@ -47,7 +47,6 @@ const Hero = ({ headline, subHeadline, subDescription }) => {
           gridTemplateRows: '300px auto auto 24px',
           gridGap: '4',
           justifyItems: 'center',
-          textAlign: 'center',
         }}
       >
         <img

@@ -6,7 +6,10 @@ import Footer from '../../components/Footer';
 
 // TODO add Open Graph and Twitter social card metadata
 const Page = ({ id, slug, title, description, image, content }) => {
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  let baseUrl = '';
+  if (typeof window !== 'undefined') {
+    baseUrl = window.location.origin;
+  }
 
   return (
     <>

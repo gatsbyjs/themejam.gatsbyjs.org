@@ -9,6 +9,7 @@ const StyledLink = ({ children, ...props }) => (
   <a
     {...props}
     sx={{
+      color: 'inherit',
       display: 'grid',
       gridTemplateColumns: ['20px auto', 'auto auto'],
       gridGap: '2',
@@ -46,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <footer sx={{ marginTop: 200, textAlign: 'left' }}>
+    <footer sx={{ marginTop: 200 }}>
       <img
         alt="Magenta and blue patterned design"
         src={MagentaBlue}

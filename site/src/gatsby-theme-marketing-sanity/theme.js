@@ -43,6 +43,9 @@ export const theme = merge(baseTheme, {
       color: 'code',
       backgroundColor: 'codeBackground',
     },
+    h1: {
+      textAlign: 'center',
+    },
     h2: {
       margin: 0,
     },

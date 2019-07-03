@@ -13,7 +13,7 @@ const Illustrations = ({ slug }) => {
         src={OrangePurple}
         sx={{
           position: 'absolute',
-          top: [800, 625],
+          top: 625,
           left: [-35, 0],
           height: ['35%', '50%'],
           maxHeight: 300,

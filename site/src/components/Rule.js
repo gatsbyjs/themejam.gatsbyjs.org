@@ -11,7 +11,6 @@ const RuleBlock = ({ node }) => {
         gridColumnGap: '4',
         gridTemplateAreas: `"icon title" "icon description"`,
         gridTemplateRows: '',
-        textAlign: 'left',
       }}
     >
       <Icon node={node.icon} />

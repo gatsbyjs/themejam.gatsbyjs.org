@@ -16,15 +16,12 @@ const Layout = ({ title, description, children }) => {
     <ThemeLayout>
       <Helmet>
         <title>{meta.title}</title>
-        <meta
-          name="description"
-          content="Gatsby example site using Styled Components"
-        />
+        <meta name="description" content={description} />
         <html lang="en-US" />
       </Helmet>
       <Header />
       <Main>
-        <Container sx={{ textAlign: 'center' }}>{children}</Container>
+        <Container>{children}</Container>
       </Main>
     </ThemeLayout>
   );
