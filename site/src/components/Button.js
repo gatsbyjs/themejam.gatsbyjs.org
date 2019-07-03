@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import { navigate } from 'gatsby';
 
 const Button = ({ children, href, radius = 0, toLink, ...props }) => {

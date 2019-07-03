@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, as } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const ButtonBlock = ({ node }) => {
