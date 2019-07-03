@@ -6,6 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   siteMetadata: {
+    basePath: 'https://themejam.gatsbyjs.org',
     title: 'Gatsby Theme Jam',
     description: 'The Gatsby Theme Jam is a... TKTK',
     footer: {
@@ -41,6 +42,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
     // {
     //   resolve: 'gatsby-theme-showcase',
     //   options: {
