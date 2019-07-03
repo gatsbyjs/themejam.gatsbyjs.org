@@ -15,6 +15,7 @@ const StyledLink = ({ children, ...props }) => (
       gridGap: '2',
       alignItems: 'center',
       whiteSpace: 'nowrap',
+      height: ['48px', 'inherit'],
     }}
   >
     {children}
