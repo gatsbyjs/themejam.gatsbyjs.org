@@ -44,32 +44,39 @@ export const theme = merge(baseTheme, {
       backgroundColor: 'codeBackground',
     },
     h1: {
+      marginTop: 4,
       textAlign: 'center',
     },
     h2: {
       margin: 0,
+      marginTop: 5,
     },
     h3: {
       margin: 0,
     },
     ul: {
-      margin: 0,
-      padding: 0,
+      marginTop: 3,
       borderTop: 'none',
       listStyle: 'none',
+      '&[type=number]': {
+        listStyle: 'decimal',
+        paddingLeft: 3,
+      },
     },
     li: {
+      marginTop: 2,
       padding: 0,
       borderBottom: 'none',
-      color: 'primary',
+      color: 'text',
       '&:focus-within,&:hover': {
         cursor: 'primary',
         backgroundColor: 'transparent',
       },
     },
     p: {
+      color: 'text',
       margin: 0,
-      marginBottom: '5',
+      marginTop: 3,
     },
   },
 });

@@ -11,11 +11,14 @@ const RuleBlock = ({ node }) => {
         gridColumnGap: '4',
         gridTemplateAreas: `"icon title" "icon description"`,
         gridTemplateRows: '',
+        marginTop: 4,
       }}
     >
       <Icon node={node.icon} />
       <Styled.h3 sx={{ gridArea: 'title' }}>{node.title}</Styled.h3>
-      <Styled.p sx={{ gridArea: 'description' }}>{node.description}</Styled.p>
+      <Styled.p sx={{ gridArea: 'description', marginTop: 0 }}>
+        {node.description}
+      </Styled.p>
     </div>
   );
 };

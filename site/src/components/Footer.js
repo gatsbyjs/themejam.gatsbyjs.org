@@ -47,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <footer sx={{ marginTop: 200 }}>
+    <footer sx={{ marginTop: 150 }}>
       <img
         alt="Magenta and blue patterned design"
         src={MagentaBlue}
@@ -75,7 +75,7 @@ const Footer = () => {
           const Icon = link.icon ? icons[link.icon] : null;
 
           return (
-            <Styled.li key={link.url}>
+            <Styled.li sx={{ marginTop: 0 }} key={link.url}>
               <StyledLink href={link.url}>
                 {Icon && <Icon />} {link.name}
               </StyledLink>
