@@ -1,14 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Illustrations from '../../components/Illustrations';
 import PortableText from 'gatsby-theme-marketing-sanity/src/components/portable-text';
+import useSiteMetadata from 'gatsby-theme-marketing-sanity/src/hooks/use-site-metadata';
+import Illustrations from '../../components/Illustrations';
 import Footer from '../../components/Footer';
 
 const Page = ({ slug, title, description, image, content }) => {
-  let baseUrl = '';
-  if (typeof window !== 'undefined') {
-    baseUrl = window.location.origin;
-  }
+  const { basePath } = useSiteMetadata();
 
   return (
     <>
@@ -17,7 +15,7 @@ const Page = ({ slug, title, description, image, content }) => {
         <meta name="description" content={description} />
         {image && <meta name="image" content={image} />}
 
-        <meta property="og:url" content={baseUrl} />
+        <meta property="og:url" content={basePath} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />

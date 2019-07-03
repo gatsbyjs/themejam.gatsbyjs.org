@@ -6,6 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   siteMetadata: {
+    basePath: 'https://themejam.gatsbyjs.org',
     title: 'Gatsby Theme Jam',
     description: 'The Gatsby Theme Jam is a... TKTK',
     footer: {
