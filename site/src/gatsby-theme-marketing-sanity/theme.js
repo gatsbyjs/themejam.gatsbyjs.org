@@ -5,6 +5,29 @@ import { merge } from 'lodash';
 export const theme = merge(baseTheme, {
   space: [0, 4, 8, 16, 32, 64, 128],
   breakpoints: ['750px'],
+  buttons: {
+    primary: {
+      fontSize: '1',
+      fontFamily: 'Futura',
+      backgroundColor: 'primary',
+      border: 'none',
+      borderRadius: '0',
+      color: 'background',
+      marginTop: 4,
+      paddingTop: 2,
+      paddingBottom: 2,
+      paddingLeft: 3,
+      paddingRight: 3,
+      whiteSpace: 'nowrap',
+      '&:focus': {
+        outline: 0,
+        boxShadow: `0 0 0 3px #D9BAE8`,
+      },
+      '&:hover': {
+        cursor: 'pointer',
+      },
+    },
+  },
   fonts: {
     heading: `Futura PT`,
     body:
@@ -36,27 +59,6 @@ export const theme = merge(baseTheme, {
     },
     Main: {
       maxWidth: '650px',
-    },
-    b: {
-      fontSize: '1',
-      fontFamily: 'Futura',
-      backgroundColor: 'primary',
-      border: 'none',
-      borderRadius: '0',
-      color: 'background',
-      marginTop: 4,
-      paddingTop: 2,
-      paddingBottom: 2,
-      paddingLeft: 3,
-      paddingRight: 3,
-      whiteSpace: 'nowrap',
-      '&:focus': {
-        outline: 0,
-        boxShadow: `0 0 0 3px #D9BAE8`,
-      },
-      '&:hover': {
-        cursor: 'pointer',
-      },
     },
     code: {
       width: '100%',
