@@ -50,6 +50,12 @@ module.exports = {
     //   },
     // },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-93349937-7`,
+      },
+    },
+    {
       resolve: 'gatsby-theme-marketing-sanity',
       options: {
         sanity: {
