@@ -34,6 +34,11 @@ export default {
   },
   // For a full list of magic types that don’t go in the `types` object,
   // see: https://github.com/sanity-io/block-content-to-react#proptypes
-  list: Styled.ul,
+  list: ({ type, children }) => {
+    if(type === "number") {
+      return <Styled.ol>{children}</Styled.ol>;
+    }
+    return <Styled.ul>{children}</Styled.ul>;
+  },
   listItem: Styled.li,
 };
