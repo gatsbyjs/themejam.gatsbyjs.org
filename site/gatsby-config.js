@@ -39,8 +39,8 @@ module.exports = {
       ],
     },
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-  __experimentalThemes: [
+  plugins: [
+    'gatsby-plugin-react-helmet',
     // {
     //   resolve: 'gatsby-theme-showcase',
     //   options: {
