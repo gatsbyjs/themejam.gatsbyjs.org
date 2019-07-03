@@ -22,10 +22,7 @@ const Layout = ({ title, description, children }) => {
       </Helmet>
       <Header />
       <Main>
-        <Container sx={{ marginBottom: ['4', '6'], textAlign: 'center' }}>
-          {children}
-        </Container>
-        <Footer sx={{ maxWidth: 'max' }} />
+        <Container sx={{ textAlign: 'center' }}>{children}</Container>
       </Main>
     </ThemeLayout>
   );
