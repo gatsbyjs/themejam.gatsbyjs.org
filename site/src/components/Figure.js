@@ -15,7 +15,7 @@ const Figure = ({ node }) => {
 
   return (
     <figure>
-      <Img fluid={fluidProps} alt={node.alt} />
+      <Img loading={'eager'} fluid={fluidProps} alt={node.alt} />
     </figure>
   );
 };
