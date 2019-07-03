@@ -18,6 +18,7 @@ const Illustrations = ({ slug }) => {
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
+          opacity: [0.5, 1],
         }}
       />
       <img
@@ -30,6 +31,7 @@ const Illustrations = ({ slug }) => {
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
+          opacity: [0.5, 1],
         }}
       />
       <svg

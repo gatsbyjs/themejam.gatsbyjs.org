@@ -11,7 +11,7 @@ const Callout = ({ node }) => {
         minHeight: `100px`,
         marginTop: 6,
         marginBottom: 6,
-        padding: 5,
+        padding: [4, 5],
         '&::before': {
           position: `absolute`,
           zIndex: `-1`,
