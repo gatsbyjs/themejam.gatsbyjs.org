@@ -2,6 +2,7 @@
 import Helmet from 'react-helmet';
 import { jsx, Layout as ThemeLayout, Main, Container } from 'theme-ui';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import useSiteMetadata from 'gatsby-theme-marketing-sanity/src/hooks/use-site-metadata';
 
 // Import Futura PT typeface
@@ -16,15 +17,15 @@ const Layout = ({ title, description, children }) => {
     <ThemeLayout>
       <Helmet>
         <title>{meta.title}</title>
-        <meta
-          name="description"
-          content="Gatsby example site using Styled Components"
-        />
+        <meta name="description" content={description} />
         <html lang="en-US" />
       </Helmet>
       <Header />
       <Main>
-        <Container sx={{ textAlign: 'center' }}>{children}</Container>
+        <Container sx={{ marginBottom: ['4', '6'], textAlign: 'center' }}>
+          {children}
+        </Container>
+        <Footer sx={{ maxWidth: 'max' }} />
       </Main>
     </ThemeLayout>
   );

@@ -15,6 +15,7 @@ const Button = ({ children, href, radius = 0, toLink, node, ...props }) => {
         fontSize: '1',
         fontFamily: 'Futura',
         backgroundColor: 'primary',
+        border: 'none',
         borderRadius: radius,
         color: 'background',
         marginBottom: '5',
