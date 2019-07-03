@@ -5,6 +5,7 @@ import Figure from 'gatsby-theme-marketing-sanity/src/components/figure';
 import Button from '../../components/Button';
 import Callout from '../../components/Callout';
 import CodeBlock from '../../components/CodeBlock';
+import Lede from '../../components/Lede';
 import Rule from '../../components/Rule';
 
 export default {
@@ -17,6 +18,7 @@ export default {
     button: Button,
     callout: Callout,
     code: CodeBlock,
+    lede: Lede,
     'page-image': ({ node }) => (
       <div
         sx={{

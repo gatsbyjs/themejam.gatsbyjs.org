@@ -21,7 +21,7 @@ const Layout = ({ title, description, children }) => {
       </Helmet>
       <Header />
       <Main>
-        <Container sx={{ textAlign: 'center' }}>{children}</Container>
+        <Container>{children}</Container>
       </Main>
     </ThemeLayout>
   );

@@ -12,7 +12,6 @@ const Callout = ({ node }) => {
         marginTop: 6,
         marginBottom: 6,
         padding: 5,
-        textAlign: `left`,
         '&::before': {
           position: `absolute`,
           zIndex: `-1`,

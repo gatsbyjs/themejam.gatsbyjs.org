@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import button from './button';
 import callout from './callout';
 import calloutContent from './calloutContent';
+import lede from './lede';
 import page from './page';
 import pageImage from './page-image';
 import rule from './rule';
@@ -23,6 +24,7 @@ export default createSchema({
     button,
     callout,
     calloutContent,
+    lede,
     page,
     pageImage,
     rule,

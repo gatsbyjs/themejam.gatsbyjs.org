@@ -47,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <footer sx={{ textAlign: 'left' }}>
+    <footer>
       <img
         alt="Magenta and blue patterned design"
         src={MagentaBlue}
