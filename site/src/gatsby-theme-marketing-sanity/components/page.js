@@ -4,8 +4,7 @@ import Illustrations from '../../components/Illustrations';
 import PortableText from 'gatsby-theme-marketing-sanity/src/components/portable-text';
 import Footer from '../../components/Footer';
 
-// TODO add Open Graph and Twitter social card metadata
-const Page = ({ id, slug, title, description, image, content }) => {
+const Page = ({ slug, title, description, image, content }) => {
   let baseUrl = '';
   if (typeof window !== 'undefined') {
     baseUrl = window.location.origin;
@@ -30,8 +29,8 @@ const Page = ({ id, slug, title, description, image, content }) => {
         <meta name="twitter:description" content={description} />
         {image && <meta name="twitter:image" content={image} />}
       </Helmet>
-      <Illustrations slug={slug} />
       <PortableText blocks={content} />
+      <Illustrations slug={slug} />
       <Footer />
     </>
   );

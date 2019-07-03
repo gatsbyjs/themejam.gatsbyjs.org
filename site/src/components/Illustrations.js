@@ -33,7 +33,7 @@ const Illustrations = ({ slug }) => {
         }}
       />
       <svg
-        sx={{ position: 'absolute', top: '25vh', left: '20vw' }}
+        sx={{ position: 'absolute', top: '25vh', left: '20vw', zIndex: 0 }}
         height="20"
         width="20"
       >
