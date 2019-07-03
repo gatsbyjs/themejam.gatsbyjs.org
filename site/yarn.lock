@@ -4510,9 +4510,9 @@ gatsby-telemetry@^1.1.2:
     uuid "3.3.2"
 
 gatsby-theme-marketing-sanity@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-marketing-sanity/-/gatsby-theme-marketing-sanity-1.2.2.tgz#b7f4761ad28d104634b3a869b88dd79a6048a33d"
-  integrity sha512-C5GEOpldSEuKT0NHSWsyw7Q0s+QHO4gHKi8WiEN+bms5fGTCh0FhKR8r1+fJDs72AMVmZo3JDVVstIKh/KuaZQ==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-marketing-sanity/-/gatsby-theme-marketing-sanity-1.2.3.tgz#89b1d07eb737984ab97e9c0394040a13b22a8284"
+  integrity sha512-NWXULj5PlCjOAgBoSEiVOnjiDMll5yE91NTbLp1kTSK5PkQsJpx9QA8WSZvn54ILymyQgqeCajtb+SJe8x5SJQ==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@mdx-js/react" "^1.0.21"
