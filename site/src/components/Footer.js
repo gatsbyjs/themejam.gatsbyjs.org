@@ -57,7 +57,7 @@ const Footer = () => {
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
-          opacity: [0.5, 1],
+          opacity: [0.3, 1],
         }}
       />
       <Styled.p sx={{ marginBottom: '2', color: 'text.1' }}>{blurb}</Styled.p>
