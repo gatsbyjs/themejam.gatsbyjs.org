@@ -1,4 +1,5 @@
-import { Styled } from 'theme-ui';
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui';
 import BlockRenderer from 'gatsby-theme-marketing-sanity/src/components/block-renderer';
 import Figure from 'gatsby-theme-marketing-sanity/src/components/figure';
 import Button from '../../components/Button';
@@ -16,7 +17,17 @@ export default {
     button: Button,
     callout: Callout,
     code: CodeBlock,
-    'page-image': Figure,
+    'page-image': ({ node }) => (
+      <div
+        sx={{
+          alignItems: 'center',
+          margin: '0 auto',
+          width: 360,
+        }}
+      >
+        <Figure node={node} />
+      </div>
+    ),
     rule: Rule,
   },
   // For a full list of magic types that don’t go in the `types` object,

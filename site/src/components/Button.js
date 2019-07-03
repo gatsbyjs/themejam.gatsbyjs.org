@@ -1,15 +1,15 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { navigate } from 'gatsby'
-import theme from '../gatsby-theme-marketing-sanity/theme'
+import { navigate } from 'gatsby';
+import theme from '../gatsby-theme-marketing-sanity/theme';
 
 const Button = ({ children, href, radius = 0, toLink, node, ...props }) => {
   return (
     <button
       onClick={() => {
         // navigate to rel or external link if provided
-        node && window.location.assign(node.linkUrl)
-        toLink && navigate(toLink)
+        toLink && navigate(toLink);
+        node && window.location.assign(node.linkUrl);
       }}
       sx={{
         fontSize: '1',

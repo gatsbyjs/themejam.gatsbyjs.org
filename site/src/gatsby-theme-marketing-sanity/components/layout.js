@@ -20,6 +20,7 @@ const Layout = ({ title, description, children }) => {
           name="description"
           content="Gatsby example site using Styled Components"
         />
+        <html lang="en-US" />
       </Helmet>
       <Header />
       <Main>
