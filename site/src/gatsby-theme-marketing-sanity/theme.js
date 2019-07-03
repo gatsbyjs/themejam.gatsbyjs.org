@@ -102,10 +102,9 @@ export const theme = merge(baseTheme, {
       marginTop: 3,
       borderTop: 'none',
       listStyle: 'none',
-      '&[type=number]': {
-        listStyle: 'decimal',
-        paddingLeft: 3,
-      },
+    },
+    ol: {
+      paddingLeft: 3,
     },
     li: {
       marginTop: 2,
