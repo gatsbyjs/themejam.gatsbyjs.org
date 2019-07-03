@@ -33,19 +33,11 @@ const Callout = ({ node }) => {
           borderRight: `20px solid transparent`,
           borderTop: `20px solid #B17ACC`,
         },
+        'h2:first-of-type': {
+          marginTop: 0,
+        },
       }}
     >
-      {/* {`Get started`.toUpperCase()}
-      <p>
-        Lorem ipsum sunt, sicilia est insula. Here's a quick start for those of
-        you who are familiar with Gatsby - I'm not sure about this copy at all.
-      </p>
-
-      <ul>
-        <li>Contest Rules</li>
-        <li>Themes Docs</li>
-        <li>Official Blog Theme on GitHub</li>
-      </ul> */}
       <PortableText blocks={node.content} />
     </div>
   );

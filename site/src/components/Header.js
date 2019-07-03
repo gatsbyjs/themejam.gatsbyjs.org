@@ -57,8 +57,8 @@ const CustomHeader = () => {
             <Link to="/rules">Contest Rules</Link>
           </li>
           <li>
-            <Button sx={{marginBottom: 0}} toLink="/submit" radius={1}>
-              Submit <span sx={{ display: ['none', 'inline'] }}>your</span>{' '}
+            <Button sx={{ margin: 0 }} toLink="/submit" radius={1}>
+              Submit <span sx={{ display: ['none', 'inline'] }}>Your</span>{' '}
               Theme
             </Button>
           </li>
