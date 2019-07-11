@@ -7,6 +7,7 @@ import Callout from '../../components/Callout';
 import CodeBlock from '../../components/CodeBlock';
 import Lede from '../../components/Lede';
 import Rule from '../../components/Rule';
+import Showcase from '../../components/Showcase';
 
 export default {
   marks: {
@@ -31,6 +32,7 @@ export default {
       </div>
     ),
     rule: Rule,
+    showcase: Showcase,
   },
   // For a full list of magic types that don’t go in the `types` object,
   // see: https://github.com/sanity-io/block-content-to-react#proptypes

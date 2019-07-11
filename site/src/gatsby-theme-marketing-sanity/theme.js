@@ -43,6 +43,11 @@ export const theme = merge(baseTheme, {
     codeBackground: '#232129',
   },
   radii: [4, 32],
+  shadows: {
+    elevated: {
+      boxShadow: `0px 1px 2px rgba(46, 41, 51, 0.08), 0px 2px 4px rgba(71, 63, 79, 0.08)`,
+    },
+  },
   sizes: {
     default: '90vw',
     max: 'inherit',

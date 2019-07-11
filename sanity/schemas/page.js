@@ -35,6 +35,7 @@ export default {
         { type: 'rule' },
         { type: 'button' },
         { type: 'lede' },
+        { type: 'showcase' },
       ],
     },
     {

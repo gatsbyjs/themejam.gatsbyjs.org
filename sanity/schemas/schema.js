@@ -13,6 +13,7 @@ import pageImage from './page-image';
 import rule from './rule';
 import ruleIcon from './rule-icon';
 import seo from './seo';
+import showcase from './showcase';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,5 +31,6 @@ export default createSchema({
     rule,
     ruleIcon,
     seo,
+    showcase,
   ]),
 });
