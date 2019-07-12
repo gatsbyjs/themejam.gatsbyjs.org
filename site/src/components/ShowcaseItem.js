@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import theme from '../gatsby-theme-marketing-sanity/theme';
+import { jsx, css } from 'theme-ui';
 import { MdLaunch } from 'react-icons/md';
 import { FaGithub } from 'react-icons/fa';
 
@@ -19,16 +18,47 @@ const ExternalLink = ({ children, href }) => (
   </a>
 );
 
-const ShowcaseItem = ({ item }) => {
+const WinnerBoxStyles = {
+  backgroundColor: 'red',
+  '&::before': {
+    position: `absolute`,
+    zIndex: `0`,
+    width: `90px`,
+    height: `90px`,
+    right: 0,
+    transform: `translate(20px, -20px)`,
+    content: `''`,
+    backgroundImage: theme =>
+      `linear-gradient(135deg, ${theme.colors.secondary} 16.67%, #ffffff 16.67%, #ffffff 50%, ${theme.colors.secondary} 50%, ${theme.colors.secondary} 66.67%, #ffffff 66.67%, #ffffff 100%)`,
+    backgroundSize: `5px 5px`,
+  },
+  '&::after': {
+    position: `absolute`,
+    zIndex: `0`,
+    content: `''`,
+    top: 0,
+    right: 0,
+    transform: `translate(20px, -20px)`,
+    borderRight: `90px solid transparent`,
+    borderTop: theme => `90px solid ${theme.colors.secondary}`,
+  },
+};
+
+const ShowcaseItem = ({ item, winner = false }) => {
   return (
-    <div>
+    <div
+      sx={{
+        position: `relative`,
+      }}
+    >
       <div
         sx={{
           variant: `shadows.elevated`,
           backgroundImage: `url(${item.screenshotUrl})`,
           backgroundSize: `cover`,
           backgroundPosition: `center`,
-          paddingBottom: `66.66%`,
+          pb: `66.66%`,
+          ...(winner && WinnerBoxStyles),
         }}
       />
       <div
@@ -41,12 +71,16 @@ const ShowcaseItem = ({ item }) => {
         `,
           gridTemplateColumns: `32px auto`,
           gridColumnGap: `2`,
-          marginTop: `2`,
+          mt: `2`,
         }}
       >
         <div sx={{ gridArea: `avatar` }}>
           <img
-            sx={{ variant: `shadows.elevated`, width: `100%` }}
+            sx={{
+              variant: `shadows.elevated`,
+              width: winner ? `200%` : `100%`,
+              transform: winner ? `translateX(-32px)` : ``,
+            }}
             src={item.avatar}
           />
         </div>
@@ -62,7 +96,7 @@ const ShowcaseItem = ({ item }) => {
             gridArea: `links`,
             fontSize: `0`,
             '* + *': {
-              marginLeft: '2',
+              ml: '2',
             },
           }}
         >

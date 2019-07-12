@@ -9,12 +9,11 @@ const Callout = ({ node }) => {
         position: `relative`,
         backgroundColor: `#FCFAFF`,
         minHeight: `100px`,
-        marginTop: 6,
-        marginBottom: 6,
+        my: 6,
         padding: [4, 5],
         '&::before': {
           position: `absolute`,
-          zIndex: `-1`,
+          zIndex: `0`,
           width: `100px`,
           height: `100px`,
           right: 0,
@@ -34,7 +33,7 @@ const Callout = ({ node }) => {
           borderTop: `20px solid #B17ACC`,
         },
         'h2:first-of-type': {
-          marginTop: 0,
+          mt: 0,
         },
       }}
     >

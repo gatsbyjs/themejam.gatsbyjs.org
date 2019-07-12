@@ -41,6 +41,7 @@ export const theme = merge(baseTheme, {
     text: ['#232129', '#635E69'],
     code: '#efefef',
     codeBackground: '#232129',
+    secondary: '#FED038',
   },
   radii: [4, 32],
   shadows: {

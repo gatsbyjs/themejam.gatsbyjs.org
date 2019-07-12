@@ -61,7 +61,7 @@ const showcaseItems = [
 
 const Showcase = ({ node: { numDisplay } }) => {
   return (
-    <section sx={{ marginTop: '3', marginBott: '3' }}>
+    <section sx={{ my: '4' }}>
       <div
         sx={{
           display: 'grid',
@@ -70,8 +70,8 @@ const Showcase = ({ node: { numDisplay } }) => {
           gridRowGap: '3',
         }}
       >
-        {showcaseItems.map(item => (
-          <ShowcaseItem item={item} />
+        {showcaseItems.map((item, index) => (
+          <ShowcaseItem item={item} winner={index === 0} />
         ))}
       </div>
       <div>Pagination</div>
