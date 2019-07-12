@@ -6,26 +6,27 @@ export const theme = merge(baseTheme, {
   space: [0, 4, 8, 16, 32, 64, 128],
   breakpoints: ['750px'],
   buttons: {
-    primary: {
+    base: {
       fontSize: '1',
-      fontFamily: 'Futura',
-      backgroundColor: 'primary',
       border: 'none',
       borderRadius: '0',
-      color: 'background',
-      marginTop: 4,
-      paddingTop: 2,
-      paddingBottom: 2,
-      paddingLeft: 3,
-      paddingRight: 3,
-      whiteSpace: 'nowrap',
+      fontFamily: 'Futura',
       '&:focus': {
         outline: 0,
-        boxShadow: `0 0 0 3px #D9BAE8`,
+        boxShadow: theme => `0 0 0 3px ${theme.colors.muted}`,
       },
       '&:hover': {
         cursor: 'pointer',
       },
+    },
+    primary: {
+      variant: 'buttons.base',
+      backgroundColor: 'primary',
+      color: 'background',
+      marginTop: 4,
+      py: 2,
+      px: 3,
+      whiteSpace: 'nowrap',
     },
   },
   fonts: {
@@ -33,15 +34,19 @@ export const theme = merge(baseTheme, {
     body:
       'Futura PT, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif',
   },
+  fontWeights: {
+    normal: `400`,
+    bold: `700`,
+  },
   colors: {
     // gray: ['#efefef', '#ddd', '#333', '#111'],
     // background: '#fff',
     // primary: '#663399',
+    secondary: '#FED038',
     muted: '#D9BAE8',
-    text: ['#232129', '#635E69'],
+    text: ['#232129', '#635E69', '#B17ACC'],
     code: '#efefef',
     codeBackground: '#232129',
-    secondary: '#FED038',
   },
   radii: [4, 32],
   shadows: {

@@ -49,7 +49,7 @@ const CustomHeader = () => {
         >
           <li
             sx={{
-              fontWeight: 400,
+              fontWeight: `normal`,
               marginRight: '4',
               display: ['none', 'list-item'],
             }}

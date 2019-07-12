@@ -44,13 +44,26 @@ const WinnerBoxStyles = {
   },
 };
 
-const ShowcaseItem = ({ item, winner = false }) => {
+const ShowcaseItem = ({ item }) => {
   return (
     <div
       sx={{
         position: `relative`,
       }}
     >
+      {item.winner && (
+        <div
+          sx={{
+            position: `absolute`,
+            transform: `translateY(-20px)`,
+            right: 0,
+            fontSize: `0`,
+            fontWeight: `bold`,
+          }}
+        >
+          {`Winner`.toUpperCase()}
+        </div>
+      )}
       <div
         sx={{
           variant: `shadows.elevated`,
@@ -58,7 +71,7 @@ const ShowcaseItem = ({ item, winner = false }) => {
           backgroundSize: `cover`,
           backgroundPosition: `center`,
           pb: `66.66%`,
-          ...(winner && WinnerBoxStyles),
+          ...(item.winner && WinnerBoxStyles),
         }}
       />
       <div
@@ -78,8 +91,8 @@ const ShowcaseItem = ({ item, winner = false }) => {
           <img
             sx={{
               variant: `shadows.elevated`,
-              width: winner ? `200%` : `100%`,
-              transform: winner ? `translateX(-32px)` : ``,
+              width: item.winner ? `200%` : `100%`,
+              transform: item.winner ? `translateX(-32px)` : ``,
             }}
             src={item.avatar}
           />
