@@ -20,7 +20,7 @@ const showcaseItems = [
     demoLink: 'https://kylegill.com',
     sourceLink: 'https://github.com/jlengstorf',
     screenshotUrl:
-      'http://images.ctfassets.net/vkdbses00qqt/3dbrYRKlvRL0lWs7vVskfG/12017eeb3894bcbf990435abf857f30d/homepage.jpg',
+      'https://www.gatsbyjs.org/static/9f696c5414e24db065cf8f7dddc19853/572fb/e29d533594cb0e820fffd838d568cc32.png',
     avatar: 'https://avatars2.githubusercontent.com/u/163561?s=460&v=4',
     winner: false,
   },
@@ -30,7 +30,7 @@ const showcaseItems = [
     demoLink: 'https://kylegill.com',
     sourceLink: 'https://github.com/gillkyle',
     screenshotUrl:
-      'http://images.ctfassets.net/vkdbses00qqt/3dbrYRKlvRL0lWs7vVskfG/12017eeb3894bcbf990435abf857f30d/homepage.jpg',
+      'https://www.gatsbyjs.org/static/27989a221511c8934e5a868f6a500e28/572fb/c75743795a473bec6377cf59f28fbef0.png',
     avatar: 'https://avatars0.githubusercontent.com/u/21114044?s=460&v=4',
     winner: false,
   },
@@ -40,7 +40,7 @@ const showcaseItems = [
     demoLink: 'https://kylegill.com',
     sourceLink: 'https://github.com/gillkyle',
     screenshotUrl:
-      'http://images.ctfassets.net/vkdbses00qqt/3dbrYRKlvRL0lWs7vVskfG/12017eeb3894bcbf990435abf857f30d/homepage.jpg',
+      'https://www.gatsbyjs.org/static/75525b3058f96d4a2b75ae0bc7b48c80/572fb/90f86d9dd3e8d00a08955d90548be13f.png',
     avatar: 'https://avatars0.githubusercontent.com/u/21114044?s=460&v=4',
     winner: false,
   },
@@ -50,7 +50,7 @@ const showcaseItems = [
     demoLink: 'https://kylegill.com',
     sourceLink: 'https://github.com/jlengstorf',
     screenshotUrl:
-      'http://images.ctfassets.net/vkdbses00qqt/3dbrYRKlvRL0lWs7vVskfG/12017eeb3894bcbf990435abf857f30d/homepage.jpg',
+      'https://www.gatsbyjs.org/static/57e04c16cd755bc288a044982da1307d/bdc1b/6992509fcb99db75a5641f0a739fb383.png',
     avatar: 'https://avatars2.githubusercontent.com/u/163561?s=460&v=4',
     winner: false,
   },

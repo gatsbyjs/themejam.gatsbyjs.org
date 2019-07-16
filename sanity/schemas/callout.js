@@ -9,6 +9,37 @@ export default {
       name: 'content',
       type: 'calloutContent',
     },
+    {
+      name: 'variant',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Purple', value: 'purple', default: true },
+          { title: 'Blue', value: 'blue' },
+          { title: 'Yellow', value: 'yellow' },
+        ],
+        layout: 'radio',
+        direction: 'horizontal',
+      },
+      validation: string => string.required(),
+    },
+    {
+      name: 'direction',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Left', value: 'left', default: true },
+          { title: 'Right', value: 'right' },
+        ],
+        layout: 'radio',
+        direction: 'horizontal',
+      },
+      validation: string => string.required(),
+    },
+    {
+      name: 'anchor',
+      type: 'string',
+    },
   ],
   preview: {
     component: () => (

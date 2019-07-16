@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
+import Arrow from '../../components/Arrow';
 import BlockRenderer from 'gatsby-theme-marketing-sanity/src/components/block-renderer';
 import Figure from 'gatsby-theme-marketing-sanity/src/components/figure';
 import ButtonBlock from '../../components/ButtonBlock';
@@ -15,6 +16,7 @@ export default {
   },
   types: {
     // if you want to change headings, etc., you have to edit this component
+    arrow: Arrow,
     block: BlockRenderer,
     button: ButtonBlock,
     callout: Callout,
@@ -37,7 +39,7 @@ export default {
   // For a full list of magic types that don’t go in the `types` object,
   // see: https://github.com/sanity-io/block-content-to-react#proptypes
   list: ({ type, children }) => {
-    if(type === "number") {
+    if (type === 'number') {
       return <Styled.ol>{children}</Styled.ol>;
     }
     return <Styled.ul>{children}</Styled.ul>;

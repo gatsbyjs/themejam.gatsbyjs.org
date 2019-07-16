@@ -47,6 +47,20 @@ export const theme = merge(baseTheme, {
     text: ['#232129', '#635E69', '#B17ACC'],
     code: '#efefef',
     codeBackground: '#232129',
+    callout: {
+      purple: {
+        flair: '#B17ACC',
+        background: '#FCFAFF',
+      },
+      yellow: {
+        flair: '#FFD280',
+        background: '#FFFCF7',
+      },
+      blue: {
+        flair: '#90CDF9',
+        background: '#F5FCFF',
+      },
+    },
   },
   radii: [4, 32],
   shadows: {
@@ -70,27 +84,6 @@ export const theme = merge(baseTheme, {
     },
     Main: {
       maxWidth: '650px',
-    },
-    b: {
-      fontSize: '1',
-      fontFamily: 'Futura',
-      backgroundColor: 'primary',
-      border: 'none',
-      borderRadius: '0',
-      color: 'background',
-      marginTop: 4,
-      paddingTop: 2,
-      paddingBottom: 2,
-      paddingLeft: 3,
-      paddingRight: 3,
-      whiteSpace: 'nowrap',
-      '&:focus': {
-        outline: 0,
-        boxShadow: `0 0 0 3px #D9BAE8`,
-      },
-      '&:hover': {
-        cursor: 'pointer',
-      },
     },
     code: {
       width: '100%',
@@ -121,14 +114,14 @@ export const theme = merge(baseTheme, {
       marginTop: 2,
       padding: 0,
       borderBottom: 'none',
-      color: 'text',
+      color: 'text.0',
       '&:focus-within,&:hover': {
         cursor: 'primary',
         backgroundColor: 'transparent',
       },
     },
     p: {
-      color: 'text',
+      color: 'text.0',
       margin: 0,
       marginTop: 3,
     },
