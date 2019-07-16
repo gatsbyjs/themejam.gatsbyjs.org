@@ -29,6 +29,9 @@ export const theme = merge(baseTheme, {
       whiteSpace: 'nowrap',
     },
   },
+  curve: {
+    default: `cubic-bezier(0.4, 0, 0.2, 1)`,
+  },
   fonts: {
     heading: `Futura PT`,
     body:
@@ -72,7 +75,7 @@ export const theme = merge(baseTheme, {
     default: '90vw',
     max: 'inherit',
   },
-  zIndices: [-1, 1],
+  zIndices: [-1, 1, 2],
   styles: {
     Header: {
       backgroundColor: 'background',
