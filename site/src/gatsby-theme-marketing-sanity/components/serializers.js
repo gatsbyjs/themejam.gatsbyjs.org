@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui';
+import { Showcase } from '@jlengstorf/gatsby-theme-showcase';
 import Arrow from '../../components/Arrow';
 import BlockRenderer from 'gatsby-theme-marketing-sanity/src/components/block-renderer';
 import Figure from 'gatsby-theme-marketing-sanity/src/components/figure';
@@ -8,8 +9,9 @@ import Callout from '../../components/Callout';
 import CodeBlock from '../../components/CodeBlock';
 import Lede from '../../components/Lede';
 import Rule from '../../components/Rule';
-import Showcase from '../../components/Showcase';
+// import Showcase from '../../components/Showcase';
 
+console.log(Showcase);
 export default {
   marks: {
     code: Styled.code,
