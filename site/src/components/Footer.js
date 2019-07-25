@@ -48,7 +48,7 @@ const Footer = () => {
   };
 
   return (
-    <footer sx={{ marginTop: 150 }}>
+    <footer sx={{ mt: 150 }}>
       <img
         alt="Magenta and blue patterned design"
         src={MagentaBlue}
@@ -61,15 +61,15 @@ const Footer = () => {
           opacity: [0.3, 1],
         }}
       />
-      <Styled.p sx={{ marginBottom: '2', color: 'text.1' }}>{blurb}</Styled.p>
+      <Styled.p sx={{ mb: '2', color: 'text.1' }}>{blurb}</Styled.p>
       <Styled.ul
         sx={{
           display: 'flex',
           flexDirection: ['column', 'row'],
-          marginTop: '4',
+          mt: '4',
           '* + *': {
-            marginLeft: [0, '3'],
-            marginTop: ['2', 0],
+            ml: [0, '3'],
+            mt: ['2', 0],
           },
         }}
       >
@@ -77,7 +77,7 @@ const Footer = () => {
           const Icon = link.icon ? icons[link.icon] : null;
 
           return (
-            <Styled.li sx={{ marginTop: 0 }} key={link.url}>
+            <Styled.li sx={{ mt: 0 }} key={link.url}>
               <StyledLink href={link.url}>
                 {Icon && <Icon />} {link.name}
               </StyledLink>

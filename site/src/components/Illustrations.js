@@ -2,15 +2,23 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 
-import OrangePurple from '../assets/pattern/orange+purple.png';
-import TealPurple from '../assets/pattern/teal+purple.png';
+import OrangePurple1 from '../assets/pattern/orange+purple.png';
+import OrangePurple2 from '../assets/pattern/orange+purple2.png';
+import TealPurple1 from '../assets/pattern/teal+purple.png';
+import TealPurple2 from '../assets/pattern/teal+purple2.png';
 
 const Illustrations = ({ slug }) => {
+  const slugsToRotateLeftIllustration = ['showcase', 'rules', 'faq'];
+  const slugsToRotateRightIllustration = ['rules', 'faq'];
   return (
     <>
       <img
         alt="Orange and purple patterned design"
-        src={OrangePurple}
+        src={
+          slugsToRotateLeftIllustration.includes(slug)
+            ? OrangePurple2
+            : OrangePurple1
+        }
         sx={{
           position: 'absolute',
           top: 625,
@@ -23,7 +31,11 @@ const Illustrations = ({ slug }) => {
       />
       <img
         alt="Teal and purple patterned design"
-        src={TealPurple}
+        src={
+          slugsToRotateRightIllustration.includes(slug)
+            ? TealPurple2
+            : TealPurple1
+        }
         sx={{
           position: 'absolute',
           top: [200, 75],
