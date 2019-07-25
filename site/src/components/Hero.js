@@ -28,7 +28,7 @@ const Hero = ({ headline, subHeadline, subDescription }) => {
         sx={{
           position: 'absolute',
           top: [200, 75],
-          right: [-10, 0],
+          right: 0,
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',

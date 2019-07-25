@@ -39,7 +39,7 @@ const Illustrations = ({ slug }) => {
         sx={{
           position: 'absolute',
           top: [200, 75],
-          right: [-15, 0],
+          right: 0,
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
