@@ -54,7 +54,7 @@ const Footer = () => {
         src={MagentaBlue}
         sx={{
           position: 'absolute',
-          right: [-35, 0],
+          right: 0,
           height: ['35%', '50%'],
           maxHeight: 300,
           zIndex: '0',
