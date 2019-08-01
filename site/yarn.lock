@@ -907,9 +907,9 @@
     "@hapi/hoek" "8.x.x"
 
 "@jlengstorf/gatsby-theme-showcase@^1.0.1":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@jlengstorf/gatsby-theme-showcase/-/gatsby-theme-showcase-1.0.3.tgz#22fb2c933dedc0ff517477ef531dd7c16b891002"
-  integrity sha512-yczU1sbpDub+4UO83L6y9q3/C6sdZUwI1o4dhDzs8fq2YgMxbbZizWXmXxrVdiq0LfjnCMSMVdEQRHI/Qhi6Eg==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@jlengstorf/gatsby-theme-showcase/-/gatsby-theme-showcase-1.0.4.tgz#fa18f974e17c77bafc23bc1c81d8887896afd37b"
+  integrity sha512-ap1rHNQ6oBljx/WDZmXwBSuWjvU2tA0ZFp7t2mNQtWgW9S0CQD7nyhi5SkexAt7FzJufSsooCL2XsdBX5stfWQ==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/react" "^1.0.27"
