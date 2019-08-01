@@ -71,12 +71,12 @@ const CustomHeader = () => {
           <StyledLi>
             <Link to="/faq">FAQ</Link>
           </StyledLi>
-          <li>
+          {/* <li>
             <Button sx={{ margin: 0 }} toLink="/submit" radius={1}>
               Submit{' '}
               <span sx={{ display: ['none', 'inline'] }}>Your Theme</span>
             </Button>
-          </li>
+          </li> */}
         </Styled.ul>
         <Hamburger />
       </nav>
