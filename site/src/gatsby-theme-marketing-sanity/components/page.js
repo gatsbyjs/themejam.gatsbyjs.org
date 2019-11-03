@@ -1,3 +1,4 @@
+//It is the site for the theme marketing
 import React from 'react';
 import Helmet from 'react-helmet';
 import PortableText from 'gatsby-theme-marketing-sanity/src/components/portable-text';
